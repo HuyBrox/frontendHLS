@@ -1,0 +1,48 @@
+.container-commentReels {
+  background: linear-gradient(#181623, #18181d, #111);
+}
+
+.header-commentReels {
+  border-bottom: 1px solid #3a3344;
+}
+.bottom-commentReels {
+  input {
+    background-color: #d7d7d7;
+    color: #000;
+
+    &::placeholder {
+      color: #333;
+    }
+  }
+}
+.textarea-css {
+  max-height: 300px;
+  overflow-y: auto;
+  resize: none;
+  background-color: #fff;
+  color: #000;
+
+  &::placeholder {
+    color: gray;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.border-Replies {
+  top: -60px;
+  left: 20px;
+  height: calc(100% + 50px);
+  border-radius: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 1.6px;
+    background-color: #303030;
+    bottom: 0;
+    left: 0;
+  }
+}

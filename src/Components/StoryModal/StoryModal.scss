@@ -1,0 +1,81 @@
+.background-left-storyModal {
+  background: linear-gradient(#181623, #050505, #181623);
+}
+.default-bg {
+  background: linear-gradient(
+    43deg,
+    rgba(65, 88, 208, 0.6) 0%,
+    rgba(200, 80, 192, 0.7) 46%,
+    rgba(255, 204, 112, 0.6) 100%
+  );
+}
+.border-story-list {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.view {
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black,
+    -1px 1px 1px black;
+  font-size: 16px;
+  cursor: pointer;
+}
+.view-deltai {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.item-StoryPreviews {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.story-item {
+  &.current {
+    width: 7rem;
+    height: 10rem;
+  }
+
+  &.normal {
+    width: 6rem;
+    height: 8rem;
+  }
+
+  .story-image {
+    border-radius: 0.5rem; // Bo góc giống Tailwind
+    overflow: hidden;
+
+    &.current {
+      height: 9.5rem; // Chiều cao hình ảnh khi đang chọn
+    }
+
+    &.normal {
+      height: 8.5rem; // Chiều cao hình ảnh mặc định
+    }
+  }
+
+  .selection-indicator {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 0.1rem;
+    background-color: white;
+  }
+}
+.story-previews-container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.story-previews-inner {
+  display: flex;
+  width: auto;
+}
+
+.story-item {
+  flex-shrink: 0;
+  width: 100%;
+}

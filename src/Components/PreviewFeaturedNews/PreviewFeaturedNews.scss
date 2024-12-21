@@ -1,0 +1,11 @@
+.Content {
+  &::-webkit-scrollbar-button {
+    display: none !important;
+  }
+  &::-webkit-scrollbar-track {
+    display: none !important;
+  }
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+}

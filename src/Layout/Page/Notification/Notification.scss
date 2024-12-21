@@ -1,0 +1,42 @@
+.Notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: linear-gradient(#181623, #050505, #181623);
+  box-shadow: 0 -30px 30px rgba(0, 0, 0, 0.6);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 30%;
+  transform: translateX(-200%);
+  transition: transform 0.9s ease;
+  z-index: 200;
+
+  &.active {
+    transform: translateX(0);
+  }
+  .Notification-content {
+    padding: 20px;
+    color: #fff;
+
+    h2 {
+      color: white;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+}
+.notification-sections {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  padding-bottom: 10px;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+  }
+}

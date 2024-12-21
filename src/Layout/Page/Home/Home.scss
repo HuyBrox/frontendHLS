@@ -1,0 +1,95 @@
+.right-siderbar::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.right-siderbar::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+  // box-shadow: none !important;
+}
+.Sidebar-right {
+  background: linear-gradient(#181623, #050505, #181623);
+}
+.title-lh {
+  // box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  // background-color: #3a3344;
+  padding: 6px 15px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+.tin-home {
+  background: linear-gradient(#181623, #18181d, #181623);
+}
+.nav-up {
+  input {
+    background-color: #10101a !important;
+  }
+}
+
+.post-home {
+  background: linear-gradient(#181623, #18181d, #181623);
+  // background-color: #10101a !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.image-post {
+  padding: 15px;
+
+  .custom-images-post {
+    border: 1px solid #45484a;
+    border-radius: 7px;
+    padding: 15px;
+
+    img {
+      width: 100% !important;
+      border-radius: 7px;
+    }
+  }
+}
+.main-center {
+  margin: 0 !important;
+  // background-color: red;
+  background-color: #10101a !important;
+}
+.background-me {
+  background-color: #ea1a1a;
+}
+.background-you {
+  background: #333;
+}
+.ring-gradient-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.text-white {
+  color: white;
+}
+
+.bg-black {
+  background-color: #000;
+}
+.post-content {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  display: block;
+}
+.break-words {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
+}
+
+.overflow-wrap-anywhere {
+  overflow-wrap: anywhere;
+}

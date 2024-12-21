@@ -1,0 +1,81 @@
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+.go {
+  // background: linear-gradient(45deg, #ff7f50, #ff4e4e, #ff69b4);
+  border-radius: 30px;
+  background: linear-gradient(to right, #ff6b6b, #ee5253);
+}
+.heart-animation {
+  animation: heartBeat 1s ease-in-out;
+  opacity: 0.8;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.tamgiac {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #181623 transparent;
+  }
+}
+.tamgiacStory {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 13px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #212121 transparent;
+  }
+}
+.tamgiacEdit {
+  background-color: #212121;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 3px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #212121 transparent;
+  }
+}
